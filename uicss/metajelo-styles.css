@@ -247,7 +247,6 @@ li button:active:before {
 .metajelo-ui_date,
 .metajelo-ui_recordId {
   padding: 2rem 1rem;
-  border-top: 2px solid #e5e5e5;
   margin-top: 1rem;
 }
 .metajelo-ui_sideBar li,
@@ -293,6 +292,15 @@ li button:active:before {
   position: sticky;
   top: 0;
   resize: both;
+}
+
+.metajelo-ui_relatedId {
+  display: flex;
+  flex-direction: row;
+}
+
+.metajelo-ui_relatedId div {
+  margin: auto;
 }
 
 .metajelo-ui_clipBtn:hover:disabled:after {
