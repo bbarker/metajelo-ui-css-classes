@@ -157,41 +157,6 @@ button:disabled:active:before {
   opacity: 0;
 }
 
-li button {
-  background-size: 100%;
-  background-image: -webkit-linear-gradient(#fcfcfc, #e5e5e5);
-  background-image: linear-gradient(#fcfcfc, #e5e5e5);
-  position: relative;
-  z-index: auto;
-  padding: 0.25rem 1rem;
-  color: black;
-  font-size: 0.8rem;
-  border-radius: 0.35rem;
-}
-li button:before {
-  border-radius: inherit;
-  background-image: -webkit-linear-gradient(#e5e5e5, #fcfcfc);
-  background-image: linear-gradient(#e5e5e5, #fcfcfc);
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -100;
-  -moz-transition: opacity 0.45s ease-in-out;
-  -webkit-transition: opacity 0.45s ease-in-out;
-  transition: opacity 0.45s ease-in-out;
-}
-li button:hover:before {
-  opacity: 1;
-}
-li button:active:before {
-  opacity: 0;
-}
-
 /*page styles*/
 .metajelo-ui_record:before {
   color: #046baf;
@@ -280,6 +245,10 @@ li button:active:before {
   flex-direction: row;
 }
 
+.metajelo-ui_previewButtons div {
+  margin-right: 10px;
+}
+
 .metajelo-ui_recFlexBox {
   display: flex;
   flex-direction: row;
@@ -300,6 +269,86 @@ li button:active:before {
 }
 
 .metajelo-ui_relatedId div {
+  margin: auto;
+}
+
+/* tabs */
+.metajelo-ui_sideBar {
+  padding: 1rem;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.metajelo-ui_sideBarTab {
+  display: inline;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.metajelo-ui_sideBarTab:hover {
+  background-color: #ddd;
+}
+.metajelo-ui_sideBarTab:active {
+  background-color: #ccc;
+}
+
+.metajelo-ui_titleList ul, .metajelo-ui_creatorList ul, .metajelo-ui_formatList ul, .metajelo-ui_productList ul {
+  padding-inline-start: 0;
+}
+
+/* delete buttons */
+.metajelo-ui_deleteItem {
+  background-size: 100%;
+  background-image: -webkit-linear-gradient(#fcfcfc, #e5e5e5);
+  background-image: linear-gradient(#fcfcfc, #e5e5e5);
+  position: relative;
+  z-index: auto;
+  padding: 0.25rem 1rem;
+  color: black;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+.metajelo-ui_deleteItem:before {
+  border-radius: inherit;
+  background-image: -webkit-linear-gradient(#e5e5e5, #fcfcfc);
+  background-image: linear-gradient(#e5e5e5, #fcfcfc);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -100;
+  -moz-transition: opacity 0.45s ease-in-out;
+  -webkit-transition: opacity 0.45s ease-in-out;
+  transition: opacity 0.45s ease-in-out;
+}
+.metajelo-ui_deleteItem:hover:before {
+  opacity: 1;
+}
+.metajelo-ui_deleteItem:active:before {
+  opacity: 0;
+}
+
+.metajelo-ui_identifier, .metajelo-ui_institutionContact {
+  display: flex;
+}
+.metajelo-ui_identifier div, .metajelo-ui_institutionContact div {
+  margin: auto;
+}
+
+.metajelo-ui_sustainability {
+  display: flex;
+}
+.metajelo-ui_sustainability span {
   margin: auto;
 }
 
