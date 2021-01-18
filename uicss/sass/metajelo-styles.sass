@@ -144,10 +144,7 @@ button:disabled
 .metajelo-ui_page
   margin: 1rem
   padding: .5rem 0
-  border-width: .25rem
-  border-style: solid
-  border-color: $medium-grey
-  border-radius: .5rem
+
 .metajelo-ui_sideBar,
 .metajelo-ui_dataCite,
 .metajelo-ui_recPreview,
@@ -202,7 +199,7 @@ button:disabled
 /* tabs */
 
 nav.metajelo-ui_sideBar 
-    border: 1px solid #ccc
+    border: 2px solid #e5e5e5
     overflow: hidden
     background-color: #f1f1f1
     padding: 0
@@ -222,7 +219,7 @@ nav.metajelo-ui_sideBar
       background-color: #ccc    
 
 .metajelo-ui_recPreview
-    border: 1px solid #ccc
+    border: 2px solid #e5e5e5
     border-top: none
     margin-top: 0
     background-color: #FBFBFB
@@ -251,6 +248,39 @@ nav.metajelo-ui_sideBar
     display: flex
     span
       margin: auto
+
+/* Collapsible */
+.metajelo-ui_relatedIdsHeader, .metajelo-ui_productsHeader
+    background-color: #eee
+    color: #444
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 15px
+    &:hover    
+      background-color: #ccc 
+    &:after
+        content: '\02795' /* Unicode character for "plus" sign (+) */
+        font-size: 13px
+        color: white
+        float: right
+        margin-left: 5px
+
+.active
+    &:hover    
+      background-color: #ccc 
+    &:after
+      content: "\2796" /* Unicode character for "minus" sign (-) */  
+
+.metajelo-ui_relatedIdList, .metajelo-ui_productList
+    padding: 0 18px
+    overflow: hidden
+    border: 2px solid #e5e5e5
+    border-top: none
+
 
 $docNotReadyMessage: "Metajelo doc is incomplete"
 
