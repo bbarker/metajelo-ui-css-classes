@@ -151,7 +151,6 @@ button:disabled
 .metajelo-ui_recEditor,
 .metajelo-ui_products,
 .metajelo-ui_relatedIds,
-.metajelo-ui_date,
 .metajelo-ui_recordId
   padding: 2rem 1rem
   //border-top: 2px solid $medium-grey
@@ -164,6 +163,9 @@ button:disabled
     color: #595959
   li:last-child
     border-bottom: 0px
+
+.metajelo-ui_date
+    margin-top: 1rem
 
 /* tooltips */
 // TODO: look into `speak` style if needed
@@ -281,6 +283,17 @@ nav.metajelo-ui_sideBar
     border: 2px solid #e5e5e5
     border-top: none
 
+/* Add more flexbox to align lable and input boxes on one line */
+.metajelo-ui_title, .metajelo-ui_creator, .metajelo-ui_pubyear, .metajelo-ui_resourceTypeGen, .metajelo-ui_resourceTypeDescr, .metajelo-ui_format, .metajelo-ui_institutionName, .metajelo-ui_institutionType, .metajelo-ui_superOrg, .metajelo-ui_policy, .metajelo-ui_policyType, .metajelo-ui_versioning
+   display: flex
+   input 
+      margin: 0.25rem
+   select 
+      margin: 0.25rem
+
+.metajelo-ui_versioning
+  input
+    margin: 1rem
 
 $docNotReadyMessage: "Metajelo doc is incomplete"
 

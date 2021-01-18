@@ -206,7 +206,6 @@ button:disabled:active:before {
 .metajelo-ui_recEditor,
 .metajelo-ui_products,
 .metajelo-ui_relatedIds,
-.metajelo-ui_date,
 .metajelo-ui_recordId {
   padding: 2rem 1rem;
   margin-top: 1rem;
@@ -217,7 +216,6 @@ button:disabled:active:before {
 .metajelo-ui_recEditor li,
 .metajelo-ui_products li,
 .metajelo-ui_relatedIds li,
-.metajelo-ui_date li,
 .metajelo-ui_recordId li {
   list-style: none;
   margin: 0.5rem 2rem 0 1.5rem;
@@ -231,9 +229,12 @@ button:disabled:active:before {
 .metajelo-ui_recEditor li:last-child,
 .metajelo-ui_products li:last-child,
 .metajelo-ui_relatedIds li:last-child,
-.metajelo-ui_date li:last-child,
 .metajelo-ui_recordId li:last-child {
   border-bottom: 0px;
+}
+
+.metajelo-ui_date {
+  margin-top: 1rem;
 }
 
 /* tooltips */
@@ -392,6 +393,21 @@ nav.metajelo-ui_sideBar {
   overflow: hidden;
   border: 2px solid #e5e5e5;
   border-top: none;
+}
+
+/* Add more flexbox to align lable and input boxes on one line */
+.metajelo-ui_title, .metajelo-ui_creator, .metajelo-ui_pubyear, .metajelo-ui_resourceTypeGen, .metajelo-ui_resourceTypeDescr, .metajelo-ui_format, .metajelo-ui_institutionName, .metajelo-ui_institutionType, .metajelo-ui_superOrg, .metajelo-ui_policy, .metajelo-ui_policyType, .metajelo-ui_versioning {
+  display: flex;
+}
+.metajelo-ui_title input, .metajelo-ui_creator input, .metajelo-ui_pubyear input, .metajelo-ui_resourceTypeGen input, .metajelo-ui_resourceTypeDescr input, .metajelo-ui_format input, .metajelo-ui_institutionName input, .metajelo-ui_institutionType input, .metajelo-ui_superOrg input, .metajelo-ui_policy input, .metajelo-ui_policyType input, .metajelo-ui_versioning input {
+  margin: 0.25rem;
+}
+.metajelo-ui_title select, .metajelo-ui_creator select, .metajelo-ui_pubyear select, .metajelo-ui_resourceTypeGen select, .metajelo-ui_resourceTypeDescr select, .metajelo-ui_format select, .metajelo-ui_institutionName select, .metajelo-ui_institutionType select, .metajelo-ui_superOrg select, .metajelo-ui_policy select, .metajelo-ui_policyType select, .metajelo-ui_versioning select {
+  margin: 0.25rem;
+}
+
+.metajelo-ui_versioning input {
+  margin: 1rem;
 }
 
 .metajelo-ui_clipBtn:hover:disabled:after {
