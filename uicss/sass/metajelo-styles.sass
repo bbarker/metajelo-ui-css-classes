@@ -44,7 +44,6 @@ optgroup
   margin: .25rem 0
   background: transparent
   vertical-align: middle
-  width: 100%
   max-width: 100%
   border-color: $medium-grey
   border-radius: .25rem
@@ -226,7 +225,7 @@ nav.metajelo-ui_sideBar
     margin-top: 0
     background-color: #FBFBFB
 
-.metajelo-ui_titleList, .metajelo-ui_creatorList, .metajelo-ui_formatList, .metajelo-ui_productList
+.metajelo-ui_relatedIdList, .metajelo-ui_titleList, .metajelo-ui_creatorList, .metajelo-ui_formatList, .metajelo-ui_productList
     ul
         padding-inline-start: 0
 
@@ -288,12 +287,16 @@ nav.metajelo-ui_sideBar
    display: flex
    input 
       margin: 0.25rem
+      width: 70%
+      height: 2.5rem
    select 
       margin: 0.25rem
+      width: 50%
 
 .metajelo-ui_versioning
   input
-    margin: 1rem
+    width: auto
+    box-shadow: none
 
 $docNotReadyMessage: "Metajelo doc is incomplete"
 

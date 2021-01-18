@@ -28,7 +28,6 @@ optgroup {
   margin: 0.25rem 0;
   background: transparent;
   vertical-align: middle;
-  width: 100%;
   max-width: 100%;
   border-color: #e5e5e5;
   border-radius: 0.25rem;
@@ -302,7 +301,7 @@ nav.metajelo-ui_sideBar {
   background-color: #FBFBFB;
 }
 
-.metajelo-ui_titleList ul, .metajelo-ui_creatorList ul, .metajelo-ui_formatList ul, .metajelo-ui_productList ul {
+.metajelo-ui_relatedIdList ul, .metajelo-ui_titleList ul, .metajelo-ui_creatorList ul, .metajelo-ui_formatList ul, .metajelo-ui_productList ul {
   padding-inline-start: 0;
 }
 
@@ -401,13 +400,17 @@ nav.metajelo-ui_sideBar {
 }
 .metajelo-ui_title input, .metajelo-ui_creator input, .metajelo-ui_pubyear input, .metajelo-ui_resourceTypeGen input, .metajelo-ui_resourceTypeDescr input, .metajelo-ui_format input, .metajelo-ui_institutionName input, .metajelo-ui_institutionType input, .metajelo-ui_superOrg input, .metajelo-ui_policy input, .metajelo-ui_policyType input, .metajelo-ui_versioning input {
   margin: 0.25rem;
+  width: 70%;
+  height: 2.5rem;
 }
 .metajelo-ui_title select, .metajelo-ui_creator select, .metajelo-ui_pubyear select, .metajelo-ui_resourceTypeGen select, .metajelo-ui_resourceTypeDescr select, .metajelo-ui_format select, .metajelo-ui_institutionName select, .metajelo-ui_institutionType select, .metajelo-ui_superOrg select, .metajelo-ui_policy select, .metajelo-ui_policyType select, .metajelo-ui_versioning select {
   margin: 0.25rem;
+  width: 50%;
 }
 
 .metajelo-ui_versioning input {
-  margin: 1rem;
+  width: auto;
+  box-shadow: none;
 }
 
 .metajelo-ui_clipBtn:hover:disabled:after {
