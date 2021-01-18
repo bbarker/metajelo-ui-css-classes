@@ -254,8 +254,8 @@ button:disabled:active:before {
   flex-direction: row;
 }
 
-.metajelo-ui_sideBar {
-  max-height: 85vh;
+.metajelo-ui_sideBarCol {
+  max-height: 90vh;
   overflow: auto;
   position: -webkit-sticky;
   position: sticky;
@@ -273,11 +273,12 @@ button:disabled:active:before {
 }
 
 /* tabs */
-.metajelo-ui_sideBar {
-  padding: 1rem;
-  overflow: hidden;
+nav.metajelo-ui_sideBar {
   border: 1px solid #ccc;
+  overflow: hidden;
   background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
 }
 
 .metajelo-ui_sideBarTab {
@@ -294,6 +295,13 @@ button:disabled:active:before {
 }
 .metajelo-ui_sideBarTab:active {
   background-color: #ccc;
+}
+
+.metajelo-ui_recPreview {
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-top: 0;
+  background-color: #FBFBFB;
 }
 
 .metajelo-ui_titleList ul, .metajelo-ui_creatorList ul, .metajelo-ui_formatList ul, .metajelo-ui_productList ul {

@@ -183,8 +183,8 @@ button:disabled
   display: flex
   flex-direction: row
 
-.metajelo-ui_sideBar
-  max-height: 85vh
+.metajelo-ui_sideBarCol
+  max-height: 90vh
   overflow: auto
   position: -webkit-sticky /* Safari */
   position: sticky
@@ -201,11 +201,12 @@ button:disabled
 
 /* tabs */
 
-.metajelo-ui_sideBar
-    padding: 1rem
-    overflow: hidden
+nav.metajelo-ui_sideBar 
     border: 1px solid #ccc
+    overflow: hidden
     background-color: #f1f1f1
+    padding: 0
+    margin: 0
 
 .metajelo-ui_sideBarTab
     display: inline
@@ -220,9 +221,15 @@ button:disabled
     &:active
       background-color: #ccc    
 
+.metajelo-ui_recPreview
+    border: 1px solid #ccc
+    border-top: none
+    margin-top: 0
+    background-color: #FBFBFB
+
 .metajelo-ui_titleList, .metajelo-ui_creatorList, .metajelo-ui_formatList, .metajelo-ui_productList
-   ul
-      padding-inline-start: 0
+    ul
+        padding-inline-start: 0
 
 /* delete buttons */
 
